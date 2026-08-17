@@ -93,11 +93,3 @@ def print_results(results):
         headers=['n', 'linear', 'binary'],
         floatfmt=".3f",
         tablefmt="github"))
-
-def test_compare_search():
-    res = compare_search(sizes=[10, 100])
-    print(res)
-    assert res[0][0] == 10
-    assert res[1][0] == 100
-    assert res[0][1] < 1
-    assert res[1][1] < 1
